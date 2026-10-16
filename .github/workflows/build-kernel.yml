@@ -158,7 +158,7 @@ jobs:
     - name: module patch
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone https://github.com/Yervant7/Apatch_Action_template -b main yv
+        git clone https://github.com/EdwardR132/Apatch_Action_template -b main yv
         cd android-kernel
         git apply $GITHUB_WORKSPACE/kernel_workspace/yv/module_fix.patch
         cp -r $GITHUB_WORKSPACE/kernel_workspace/yv/apatch $GITHUB_WORKSPACE/kernel_workspace/android-kernel
